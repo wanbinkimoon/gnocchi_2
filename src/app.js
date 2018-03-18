@@ -23,10 +23,11 @@ let scene1;
 const sketch = p => {
 
   p.setup = () => {
-    p.createCanvas(1200, 1200);
+    p.createCanvas(1200, 400);
     p.background(255)
     
     scene1 = p.createGraphics(400, 400);
+    scene1.scale(.5)
     // scene2 = p.createGraphics(400, 400);
     // scene3 = p.createGraphics(400, 400);
     // scene4 = p.createGraphics(400, 400);
@@ -49,6 +50,7 @@ const sketch = p => {
     // drawScene9(scene9, p)
     
     p.image(scene1, 0, 0);
+
     // p.image(scene2, 400, 0);
     // p.image(scene3, 800, 0);
     // p.image(scene4, 0, 400);
